@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class powersTable {
+
+	public static void main(String[] args) {
+		char cont;
+		Scanner scnr = new Scanner(System.in);
+		do {
+			System.out.println("Enter an integer:");
+			int userInput = scnr.nextInt();
+			int i = 1;
+			System.out.format("%s", "Number");
+			System.out.format("%11s", "Squared");
+			System.out.format("%10s", "Cubed");
+			System.out.println();
+			System.out.println("======    =======     =====");
+			do {
+				System.out.printf("%3d", i);
+				
+				System.out.printf("%11d", i * i);
+				
+				System.out.printf("%11d", i * i * i);
+				
+				i++;
+				System.out.println();
+
+			} while (i <= userInput);
+			System.out.println();
+			System.out.println("Continue? y/n:");
+			cont = scnr.next().charAt(0);
+		} while (cont == 'Y' || cont == 'y');
+		System.out.println("Goodbye!");
+	}
+
+}

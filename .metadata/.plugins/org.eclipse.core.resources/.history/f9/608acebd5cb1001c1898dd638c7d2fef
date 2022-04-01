@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class powersTable {
+
+	public static void main(String[] args) {
+	
+		Scanner scnr = new Scanner(System.in);
+		System.out.println("Enter an integer:");
+		int userInput = scnr.nextInt();
+		int i = 0;
+		System.out.println("Number    Squared     Cubed");
+		System.out.println("======    =======     =====");
+		do {
+			System.out.println("   "+ i + "         " + (i * i) + "        " + (i * i * i));
+		i++;
+			
+		} while (i <= userInput);
+		
+
+	}
+
+}
